@@ -1,0 +1,4 @@
+{
+    "mongourl":"mongodb+srv://shaikh_hamza:hamza@devchat.uxtdb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "Port":3000
+}
