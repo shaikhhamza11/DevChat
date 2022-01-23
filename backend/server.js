@@ -7,7 +7,6 @@ const dotenv = require('dotenv')
 dotenv.config({path:path.join(__dirname,"/config/config.env")})
 const connectDb = require('./config/db')
 const chalk = require('chalk')
-const { mongo } = require('mongoose')
 const mongoSanitize = require('express-mongo-sanitize');
 const app =  express()
 const port = process.env.PORT ||  3000;
@@ -19,7 +18,7 @@ connectDb()
 
 app.use(cors({
     origin:'*',
-    method:['PUT']
+    method:[]
 }))
 //safety against $ sign operator
 app.use(mongoSanitize())
